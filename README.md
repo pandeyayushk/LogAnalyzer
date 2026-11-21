@@ -35,7 +35,8 @@ src/main/java/com/ayush/loganalyzer/
 ├── parser/    Single-header parser
 └── report/    Immutable AnalysisReport
 src/test/java/ JUnit 5 tests
-samples/       Example logs, including a nested log directory
+samples/       26 synthetic logs with 177,625 valid entries
+tools/         Deterministic sample-data generator (Python standard library only)
 docs/          Architecture and implementation limitations
 ```
 
@@ -127,29 +128,29 @@ filter samples --severity ERROR --keyword "connection failed" --logger PaymentSe
 ```text
 loganalyzer> analyze samples
 Analysis summary
-Valid entries: 8
-Files: 2 processed / 2 discovered / 0 skipped
-Malformed/orphan lines: 1
-Earliest timestamp: 2026-11-21T09:12:03
-Latest timestamp: 2026-11-21T10:45:40
+Valid entries: 177625
+Files: 26 processed / 26 discovered / 0 skipped
+Malformed/orphan lines: 4
+Earliest timestamp: 2026-11-18T07:00:02
+Latest timestamp: 2026-11-22T23:47:43
 Severity counts:
-  TRACE 1 (12.50%)
-  DEBUG 1 (12.50%)
-  INFO  2 (25.00%)
-  WARN  1 (12.50%)
-  ERROR 2 (25.00%)
-  FATAL 1 (12.50%)
-Errors (ERROR + FATAL): 3
+  TRACE 2037 (1.15%)
+  DEBUG 20233 (11.39%)
+  INFO  104000 (58.55%)
+  WARN  30883 (17.39%)
+  ERROR 18689 (10.52%)
+  FATAL 1783 (1.00%)
+Errors (ERROR + FATAL): 20472
 ...
-loganalyzer> filter samples --severity ERROR --keyword "database unavailable"
+loganalyzer> filter samples --severity ERROR --keyword retry --logger PaymentService --from 2026-11-20T10:00:00 --to 2026-11-20T10:59:59
 ...
-Entries examined: 7
-Matching entries: 1
+Entries examined: 177625
+Matching entries: 604
 loganalyzer> exit
 Goodbye.
 ```
 
-Output paths depend on the working directory and operating system. Sample log fixtures are in [`samples/`](samples/).
+Output paths depend on the working directory and operating system. The [`samples/`](samples/) directory contains 26 nested synthetic logs with 177,625 valid entries, four malformed/orphan prefix lines, and about 190,000 physical lines. See [samples/README.md](samples/README.md) for the service map and useful exploration commands. Regenerate the fixtures with `python tools/generate_samples.py`.
 
 ## Tests
 

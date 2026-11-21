@@ -1,0 +1,275 @@
+2026-11-19 07:25:55 INFO LegacyAdapter - operation completed after retry request=req-760792
+2026-11-19 07:36:02 INFO LegacyAdapter - legacy order payload translated order=ord-276041 schemaVersion=2
+2026-11-19 07:46:44 INFO LegacyAdapter - legacy order payload translated order=ord-173512 schemaVersion=2
+2026-11-19 07:58:41 WARN LegacyAdapter - legacy client omitted optional field request=req-230421
+2026-11-19 08:08:08 INFO LegacyAdapter - legacy order payload translated order=ord-861379 schemaVersion=2
+2026-11-19 08:18:06 INFO LegacyAdapter - legacy order payload translated order=ord-380257 schemaVersion=2
+2026-11-19 08:28:42 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 08:38:40 INFO LegacyAdapter - legacy order payload translated order=ord-675741 schemaVersion=2
+2026-11-19 08:48:57 INFO LegacyAdapter - legacy order payload translated order=ord-977008 schemaVersion=2
+2026-11-19 09:00:26 INFO LegacyAdapter - legacy order payload translated order=ord-306471 schemaVersion=2
+2026-11-19 09:10:02 WARN LegacyAdapter - legacy client omitted optional field request=req-258354
+2026-11-19 09:22:02 INFO LegacyAdapter - legacy order payload translated order=ord-312736 schemaVersion=2
+2026-11-19 09:32:46 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 09:42:14 INFO LegacyAdapter - legacy order payload translated order=ord-685552 schemaVersion=2
+2026-11-19 09:53:54 INFO LegacyAdapter - legacy order payload translated order=ord-569046 schemaVersion=2
+2026-11-19 10:02:25 INFO LegacyAdapter - legacy order payload translated order=ord-285337 schemaVersion=2
+2026-11-19 10:12:50 INFO LegacyAdapter - legacy order payload translated order=ord-353435 schemaVersion=2
+2026-11-19 10:25:31 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 10:35:26 WARN LegacyAdapter - legacy client omitted optional field request=req-784501
+2026-11-19 10:45:24 INFO LegacyAdapter - legacy order payload translated order=ord-154116 schemaVersion=2
+2026-11-19 10:56:53 INFO LegacyAdapter - legacy order payload translated order=ord-802504 schemaVersion=2
+2026-11-19 11:05:17 INFO LegacyAdapter - legacy order payload translated order=ord-447843 schemaVersion=2
+2026-11-19 11:16:36 INFO LegacyAdapter - legacy order payload translated order=ord-557363 schemaVersion=2
+2026-11-19 11:27:09 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 11:37:01 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 11:47:03 WARN LegacyAdapter - legacy client omitted optional field request=req-879621
+2026-11-19 11:58:22 WARN LegacyAdapter - legacy client omitted optional field request=req-451934
+2026-11-19 12:09:13 WARN LegacyAdapter - legacy client omitted optional field request=req-228441
+2026-11-19 12:20:01 INFO LegacyAdapter - legacy order payload translated order=ord-464974 schemaVersion=2
+2026-11-19 12:29:03 INFO LegacyAdapter - legacy order payload translated order=ord-343016 schemaVersion=2
+2026-11-19 12:41:47 INFO LegacyAdapter - legacy order payload translated order=ord-415905 schemaVersion=2
+2026-11-19 12:50:04 INFO LegacyAdapter - legacy order payload translated order=ord-446671 schemaVersion=2
+2026-11-19 13:02:23 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 13:10:44 INFO LegacyAdapter - legacy order payload translated order=ord-700626 schemaVersion=2
+2026-11-19 13:21:56 INFO LegacyAdapter - legacy order payload translated order=ord-474483 schemaVersion=2
+2026-11-19 13:33:52 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 13:43:17 INFO LegacyAdapter - legacy order payload translated order=ord-572314 schemaVersion=2
+2026-11-19 13:55:02 INFO LegacyAdapter - legacy order payload translated order=ord-239027 schemaVersion=2
+2026-11-19 14:03:00 INFO LegacyAdapter - legacy order payload translated order=ord-458936 schemaVersion=2
+2026-11-19 14:14:28 INFO LegacyAdapter - legacy order payload translated order=ord-151136 schemaVersion=2
+2026-11-19 14:25:18 INFO LegacyAdapter - legacy order payload translated order=ord-775950 schemaVersion=2
+2026-11-19 14:35:14 INFO LegacyAdapter - legacy order payload translated order=ord-560812 schemaVersion=2
+2026-11-19 14:45:38 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 14:55:21 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 15:08:16 INFO LegacyAdapter - legacy order payload translated order=ord-854379 schemaVersion=2
+2026-11-19 15:17:16 INFO LegacyAdapter - legacy order payload translated order=ord-766346 schemaVersion=2
+2026-11-19 15:28:04 INFO LegacyAdapter - legacy order payload translated order=ord-390309 schemaVersion=2
+2026-11-19 15:39:38 INFO LegacyAdapter - legacy order payload translated order=ord-221424 schemaVersion=2
+2026-11-19 15:50:12 INFO LegacyAdapter - legacy order payload translated order=ord-249395 schemaVersion=2
+2026-11-19 16:00:00 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 16:09:33 WARN LegacyAdapter - legacy client omitted optional field request=req-792339
+2026-11-19 16:19:48 WARN LegacyAdapter - legacy client omitted optional field request=req-156890
+2026-11-19 16:29:52 INFO LegacyAdapter - legacy order payload translated order=ord-247912 schemaVersion=2
+2026-11-19 16:41:34 INFO LegacyAdapter - legacy order payload translated order=ord-579042 schemaVersion=2
+2026-11-19 16:51:02 INFO LegacyAdapter - legacy order payload translated order=ord-279601 schemaVersion=2
+2026-11-19 17:01:47 INFO LegacyAdapter - legacy order payload translated order=ord-701018 schemaVersion=2
+2026-11-19 17:13:47 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 17:23:02 INFO LegacyAdapter - legacy order payload translated order=ord-105783 schemaVersion=2
+2026-11-19 17:32:50 INFO LegacyAdapter - legacy order payload translated order=ord-589693 schemaVersion=2
+2026-11-19 17:43:56 WARN LegacyAdapter - legacy client omitted optional field request=req-757954
+2026-11-19 17:55:35 INFO LegacyAdapter - legacy order payload translated order=ord-240129 schemaVersion=2
+2026-11-19 18:05:30 INFO LegacyAdapter - legacy order payload translated order=ord-163085 schemaVersion=2
+2026-11-19 18:16:11 INFO LegacyAdapter - legacy order payload translated order=ord-157889 schemaVersion=2
+2026-11-19 18:24:48 INFO LegacyAdapter - legacy order payload translated order=ord-677675 schemaVersion=2
+2026-11-19 18:36:09 INFO LegacyAdapter - legacy order payload translated order=ord-422050 schemaVersion=2
+2026-11-19 18:46:02 INFO LegacyAdapter - legacy order payload translated order=ord-233784 schemaVersion=2
+2026-11-19 18:57:50 INFO LegacyAdapter - legacy order payload translated order=ord-918279 schemaVersion=2
+2026-11-19 19:08:53 INFO LegacyAdapter - legacy order payload translated order=ord-720752 schemaVersion=2
+2026-11-19 19:19:09 INFO LegacyAdapter - legacy order payload translated order=ord-415935 schemaVersion=2
+2026-11-19 19:28:59 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 19:39:16 INFO LegacyAdapter - legacy order payload translated order=ord-750293 schemaVersion=2
+2026-11-19 19:49:39 INFO LegacyAdapter - legacy order payload translated order=ord-590457 schemaVersion=2
+2026-11-19 20:00:31 INFO LegacyAdapter - legacy order payload translated order=ord-446236 schemaVersion=2
+2026-11-19 20:09:52 INFO LegacyAdapter - legacy order payload translated order=ord-216637 schemaVersion=2
+2026-11-19 20:20:37 WARN LegacyAdapter - legacy client omitted optional field request=req-601289
+2026-11-19 20:30:51 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 20:43:27 WARN LegacyAdapter - legacy client omitted optional field request=req-928680
+2026-11-19 20:53:14 INFO LegacyAdapter - legacy order payload translated order=ord-155006 schemaVersion=2
+2026-11-19 21:02:40 INFO LegacyAdapter - legacy order payload translated order=ord-161942 schemaVersion=2
+2026-11-19 21:13:02 WARN LegacyAdapter - legacy client omitted optional field request=req-764305
+2026-11-19 21:23:50 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 21:34:38 INFO LegacyAdapter - legacy order payload translated order=ord-961877 schemaVersion=2
+2026-11-19 21:45:52 INFO LegacyAdapter - legacy order payload translated order=ord-864430 schemaVersion=2
+2026-11-19 21:56:29 WARN LegacyAdapter - legacy client omitted optional field request=req-696113
+2026-11-19 22:05:55 INFO LegacyAdapter - legacy order payload translated order=ord-744240 schemaVersion=2
+2026-11-19 22:17:39 INFO LegacyAdapter - legacy order payload translated order=ord-548665 schemaVersion=2
+2026-11-19 22:27:04 INFO LegacyAdapter - legacy order payload translated order=ord-218629 schemaVersion=2
+2026-11-19 22:36:27 INFO LegacyAdapter - legacy order payload translated order=ord-552748 schemaVersion=2
+2026-11-19 22:47:53 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 22:58:49 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-19 23:08:02 INFO LegacyAdapter - legacy order payload translated order=ord-463285 schemaVersion=2
+2026-11-19 23:18:16 INFO LegacyAdapter - legacy order payload translated order=ord-684451 schemaVersion=2
+2026-11-20 07:30:51 INFO LegacyAdapter - legacy order payload translated order=ord-803408 schemaVersion=2
+2026-11-20 07:39:45 INFO LegacyAdapter - legacy order payload translated order=ord-127799 schemaVersion=2
+2026-11-20 07:50:23 INFO LegacyAdapter - legacy order payload translated order=ord-597837 schemaVersion=2
+2026-11-20 08:02:31 WARN LegacyAdapter - legacy client omitted optional field request=req-852747
+2026-11-20 08:10:54 INFO LegacyAdapter - legacy order payload translated order=ord-213472 schemaVersion=2
+2026-11-20 08:22:48 INFO LegacyAdapter - legacy order payload translated order=ord-128510 schemaVersion=2
+2026-11-20 08:32:30 INFO LegacyAdapter - legacy order payload translated order=ord-551510 schemaVersion=2
+2026-11-20 08:44:13 INFO LegacyAdapter - legacy order payload translated order=ord-416838 schemaVersion=2
+2026-11-20 08:52:40 INFO LegacyAdapter - legacy order payload translated order=ord-287029 schemaVersion=2
+2026-11-20 09:04:14 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 09:14:25 INFO LegacyAdapter - legacy order payload translated order=ord-835125 schemaVersion=2
+2026-11-20 09:23:42 WARN LegacyAdapter - legacy client omitted optional field request=req-833069
+2026-11-20 09:35:54 WARN LegacyAdapter - legacy client omitted optional field request=req-195458
+2026-11-20 09:46:08 INFO LegacyAdapter - legacy order payload translated order=ord-195968 schemaVersion=2
+2026-11-20 09:56:36 INFO LegacyAdapter - legacy order payload translated order=ord-755688 schemaVersion=2
+2026-11-20 10:07:19 INFO LegacyAdapter - legacy order payload translated order=ord-696888 schemaVersion=2
+2026-11-20 10:18:27 WARN LegacyAdapter - legacy client omitted optional field request=req-211703
+2026-11-20 10:28:33 INFO LegacyAdapter - legacy order payload translated order=ord-377862 schemaVersion=2
+2026-11-20 10:37:55 INFO LegacyAdapter - legacy order payload translated order=ord-331064 schemaVersion=2
+2026-11-20 10:49:35 INFO LegacyAdapter - legacy order payload translated order=ord-763243 schemaVersion=2
+2026-11-20 10:58:18 INFO LegacyAdapter - legacy order payload translated order=ord-190979 schemaVersion=2
+2026-11-20 11:10:37 INFO LegacyAdapter - legacy order payload translated order=ord-381300 schemaVersion=2
+2026-11-20 11:20:42 INFO LegacyAdapter - legacy order payload translated order=ord-885606 schemaVersion=2
+2026-11-20 11:30:49 WARN LegacyAdapter - legacy client omitted optional field request=req-354568
+2026-11-20 11:40:31 INFO LegacyAdapter - legacy order payload translated order=ord-842025 schemaVersion=2
+2026-11-20 11:52:38 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 12:02:51 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 12:12:46 INFO LegacyAdapter - legacy order payload translated order=ord-748649 schemaVersion=2
+2026-11-20 12:22:39 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 12:32:44 INFO LegacyAdapter - legacy order payload translated order=ord-735913 schemaVersion=2
+2026-11-20 12:43:45 WARN LegacyAdapter - legacy client omitted optional field request=req-399877
+2026-11-20 12:55:27 INFO LegacyAdapter - legacy order payload translated order=ord-308275 schemaVersion=2
+2026-11-20 13:04:06 INFO LegacyAdapter - legacy order payload translated order=ord-891407 schemaVersion=2
+2026-11-20 13:15:20 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 13:25:02 INFO LegacyAdapter - legacy order payload translated order=ord-252860 schemaVersion=2
+2026-11-20 13:35:25 INFO LegacyAdapter - legacy order payload translated order=ord-229682 schemaVersion=2
+2026-11-20 13:47:53 WARN LegacyAdapter - legacy client omitted optional field request=req-527086
+2026-11-20 13:55:59 INFO LegacyAdapter - legacy order payload translated order=ord-881236 schemaVersion=2
+2026-11-20 14:07:42 INFO LegacyAdapter - legacy order payload translated order=ord-259451 schemaVersion=2
+2026-11-20 14:17:45 INFO LegacyAdapter - legacy order payload translated order=ord-396833 schemaVersion=2
+2026-11-20 14:29:00 INFO LegacyAdapter - legacy order payload translated order=ord-747232 schemaVersion=2
+2026-11-20 14:39:29 INFO LegacyAdapter - legacy order payload translated order=ord-287091 schemaVersion=2
+2026-11-20 14:48:47 INFO LegacyAdapter - legacy order payload translated order=ord-126781 schemaVersion=2
+2026-11-20 15:00:52 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 15:09:22 INFO LegacyAdapter - legacy order payload translated order=ord-973018 schemaVersion=2
+2026-11-20 15:21:34 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 15:32:09 INFO LegacyAdapter - legacy order payload translated order=ord-694553 schemaVersion=2
+2026-11-20 15:43:05 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 15:52:49 INFO LegacyAdapter - legacy order payload translated order=ord-827107 schemaVersion=2
+2026-11-20 16:01:57 INFO LegacyAdapter - legacy order payload translated order=ord-101953 schemaVersion=2
+2026-11-20 16:14:01 INFO LegacyAdapter - legacy order payload translated order=ord-960967 schemaVersion=2
+2026-11-20 16:23:28 INFO LegacyAdapter - legacy order payload translated order=ord-565984 schemaVersion=2
+2026-11-20 16:34:27 WARN LegacyAdapter - legacy client omitted optional field request=req-593080
+2026-11-20 16:43:39 INFO LegacyAdapter - legacy order payload translated order=ord-829429 schemaVersion=2
+2026-11-20 16:54:03 INFO LegacyAdapter - legacy order payload translated order=ord-819614 schemaVersion=2
+2026-11-20 17:04:32 WARN LegacyAdapter - legacy client omitted optional field request=req-408913
+2026-11-20 17:16:55 INFO LegacyAdapter - legacy order payload translated order=ord-169546 schemaVersion=2
+2026-11-20 17:26:36 INFO LegacyAdapter - legacy order payload translated order=ord-254149 schemaVersion=2
+2026-11-20 17:37:01 INFO LegacyAdapter - legacy order payload translated order=ord-823740 schemaVersion=2
+2026-11-20 17:47:10 WARN LegacyAdapter - legacy client omitted optional field request=req-172062
+2026-11-20 17:58:53 INFO LegacyAdapter - legacy order payload translated order=ord-493677 schemaVersion=2
+2026-11-20 18:08:56 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 18:17:59 WARN LegacyAdapter - legacy client omitted optional field request=req-277554
+2026-11-20 18:30:28 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 18:39:50 INFO LegacyAdapter - legacy order payload translated order=ord-522618 schemaVersion=2
+2026-11-20 18:51:20 INFO LegacyAdapter - legacy order payload translated order=ord-521567 schemaVersion=2
+2026-11-20 19:00:36 INFO LegacyAdapter - legacy order payload translated order=ord-401675 schemaVersion=2
+2026-11-20 19:10:57 INFO LegacyAdapter - legacy order payload translated order=ord-524562 schemaVersion=2
+2026-11-20 19:22:30 INFO LegacyAdapter - legacy order payload translated order=ord-745654 schemaVersion=2
+2026-11-20 19:32:41 WARN LegacyAdapter - legacy client omitted optional field request=req-946518
+2026-11-20 19:43:34 INFO LegacyAdapter - legacy order payload translated order=ord-711746 schemaVersion=2
+2026-11-20 19:52:12 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 20:05:07 INFO LegacyAdapter - legacy order payload translated order=ord-850690 schemaVersion=2
+2026-11-20 20:13:35 INFO LegacyAdapter - legacy order payload translated order=ord-744240 schemaVersion=2
+2026-11-20 20:24:09 INFO LegacyAdapter - legacy order payload translated order=ord-337103 schemaVersion=2
+2026-11-20 20:34:59 INFO LegacyAdapter - legacy order payload translated order=ord-717394 schemaVersion=2
+2026-11-20 20:47:01 INFO LegacyAdapter - legacy order payload translated order=ord-573769 schemaVersion=2
+2026-11-20 20:56:27 WARN LegacyAdapter - legacy client omitted optional field request=req-877434
+2026-11-20 21:06:26 INFO LegacyAdapter - legacy order payload translated order=ord-720117 schemaVersion=2
+2026-11-20 21:16:46 INFO LegacyAdapter - legacy order payload translated order=ord-352186 schemaVersion=2
+2026-11-20 21:26:32 INFO LegacyAdapter - legacy order payload translated order=ord-909760 schemaVersion=2
+2026-11-20 21:38:30 INFO LegacyAdapter - legacy order payload translated order=ord-381040 schemaVersion=2
+2026-11-20 21:49:13 INFO LegacyAdapter - legacy order payload translated order=ord-784786 schemaVersion=2
+2026-11-20 21:59:47 INFO LegacyAdapter - legacy order payload translated order=ord-107170 schemaVersion=2
+2026-11-20 22:09:13 INFO LegacyAdapter - legacy order payload translated order=ord-847493 schemaVersion=2
+2026-11-20 22:19:17 INFO LegacyAdapter - legacy order payload translated order=ord-634342 schemaVersion=2
+2026-11-20 22:30:48 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 22:41:57 INFO LegacyAdapter - legacy order payload translated order=ord-536307 schemaVersion=2
+2026-11-20 22:51:32 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-20 23:00:47 WARN LegacyAdapter - legacy client omitted optional field request=req-309878
+2026-11-20 23:12:23 INFO LegacyAdapter - legacy order payload translated order=ord-701441 schemaVersion=2
+2026-11-20 23:21:32 WARN LegacyAdapter - legacy client omitted optional field request=req-669549
+2026-11-21 07:34:29 INFO LegacyAdapter - legacy order payload translated order=ord-436430 schemaVersion=2
+2026-11-21 07:44:38 INFO LegacyAdapter - legacy order payload translated order=ord-566950 schemaVersion=2
+2026-11-21 07:54:52 INFO LegacyAdapter - legacy order payload translated order=ord-990817 schemaVersion=2
+2026-11-21 08:05:55 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 08:15:38 INFO LegacyAdapter - legacy order payload translated order=ord-463155 schemaVersion=2
+2026-11-21 08:24:45 INFO LegacyAdapter - legacy order payload translated order=ord-646823 schemaVersion=2
+2026-11-21 08:35:21 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 08:45:47 INFO LegacyAdapter - legacy order payload translated order=ord-820839 schemaVersion=2
+2026-11-21 08:57:18 INFO LegacyAdapter - legacy order payload translated order=ord-269492 schemaVersion=2
+2026-11-21 09:07:00 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 09:18:24 INFO LegacyAdapter - legacy order payload translated order=ord-511939 schemaVersion=2
+2026-11-21 09:29:45 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 09:38:05 INFO LegacyAdapter - legacy order payload translated order=ord-624376 schemaVersion=2
+2026-11-21 09:48:41 INFO LegacyAdapter - legacy order payload translated order=ord-638565 schemaVersion=2
+2026-11-21 10:00:13 INFO LegacyAdapter - legacy order payload translated order=ord-447114 schemaVersion=2
+2026-11-21 10:10:19 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 10:20:13 INFO LegacyAdapter - legacy order payload translated order=ord-943492 schemaVersion=2
+2026-11-21 10:30:14 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 10:41:15 INFO LegacyAdapter - legacy order payload translated order=ord-922363 schemaVersion=2
+2026-11-21 10:53:23 INFO LegacyAdapter - legacy order payload translated order=ord-528631 schemaVersion=2
+2026-11-21 11:03:59 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 11:12:31 INFO LegacyAdapter - legacy order payload translated order=ord-643998 schemaVersion=2
+2026-11-21 11:23:30 INFO LegacyAdapter - legacy order payload translated order=ord-998317 schemaVersion=2
+2026-11-21 11:33:34 INFO LegacyAdapter - legacy order payload translated order=ord-843179 schemaVersion=2
+2026-11-21 11:44:27 WARN LegacyAdapter - legacy client omitted optional field request=req-707986
+2026-11-21 11:55:15 INFO LegacyAdapter - legacy order payload translated order=ord-300745 schemaVersion=2
+2026-11-21 12:04:18 INFO LegacyAdapter - legacy order payload translated order=ord-590673 schemaVersion=2
+2026-11-21 12:15:03 WARN LegacyAdapter - legacy client omitted optional field request=req-720758
+2026-11-21 12:25:29 WARN LegacyAdapter - legacy client omitted optional field request=req-531816
+2026-11-21 12:37:45 INFO LegacyAdapter - legacy order payload translated order=ord-840928 schemaVersion=2
+2026-11-21 12:47:43 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 12:58:12 WARN LegacyAdapter - legacy client omitted optional field request=req-988697
+2026-11-21 13:07:41 INFO LegacyAdapter - legacy order payload translated order=ord-688501 schemaVersion=2
+2026-11-21 13:19:38 INFO LegacyAdapter - legacy order payload translated order=ord-559995 schemaVersion=2
+2026-11-21 13:30:00 INFO LegacyAdapter - legacy order payload translated order=ord-373919 schemaVersion=2
+2026-11-21 13:40:47 INFO LegacyAdapter - legacy order payload translated order=ord-719032 schemaVersion=2
+2026-11-21 13:49:58 WARN LegacyAdapter - legacy client omitted optional field request=req-593490
+2026-11-21 14:01:12 INFO LegacyAdapter - legacy order payload translated order=ord-398172 schemaVersion=2
+2026-11-21 14:10:10 INFO LegacyAdapter - legacy order payload translated order=ord-887623 schemaVersion=2
+2026-11-21 14:21:45 INFO LegacyAdapter - legacy order payload translated order=ord-968904 schemaVersion=2
+2026-11-21 14:31:01 INFO LegacyAdapter - legacy order payload translated order=ord-961985 schemaVersion=2
+2026-11-21 14:43:29 WARN LegacyAdapter - legacy client omitted optional field request=req-544136
+2026-11-21 14:52:43 INFO LegacyAdapter - legacy order payload translated order=ord-283539 schemaVersion=2
+2026-11-21 15:03:41 INFO LegacyAdapter - legacy order payload translated order=ord-751583 schemaVersion=2
+2026-11-21 15:13:50 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 15:24:23 WARN LegacyAdapter - legacy client omitted optional field request=req-736508
+2026-11-21 15:35:34 INFO LegacyAdapter - legacy order payload translated order=ord-148447 schemaVersion=2
+2026-11-21 15:45:01 INFO LegacyAdapter - legacy order payload translated order=ord-659762 schemaVersion=2
+2026-11-21 15:55:37 INFO LegacyAdapter - legacy order payload translated order=ord-159068 schemaVersion=2
+2026-11-21 16:07:26 WARN LegacyAdapter - legacy client omitted optional field request=req-987751
+2026-11-21 16:16:37 WARN LegacyAdapter - legacy client omitted optional field request=req-352917
+2026-11-21 16:26:38 INFO LegacyAdapter - legacy order payload translated order=ord-429485 schemaVersion=2
+2026-11-21 16:37:08 WARN LegacyAdapter - legacy client omitted optional field request=req-692629
+2026-11-21 16:49:29 WARN LegacyAdapter - legacy client omitted optional field request=req-976629
+2026-11-21 16:59:18 INFO LegacyAdapter - legacy order payload translated order=ord-702562 schemaVersion=2
+2026-11-21 17:10:32 WARN LegacyAdapter - legacy client omitted optional field request=req-373462
+2026-11-21 17:20:29 WARN LegacyAdapter - legacy client omitted optional field request=req-871458
+2026-11-21 17:29:22 INFO LegacyAdapter - legacy order payload translated order=ord-630240 schemaVersion=2
+2026-11-21 17:40:32 WARN LegacyAdapter - legacy client omitted optional field request=req-668309
+2026-11-21 17:51:27 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 18:02:45 INFO LegacyAdapter - legacy order payload translated order=ord-114234 schemaVersion=2
+2026-11-21 18:13:18 WARN LegacyAdapter - legacy client omitted optional field request=req-860669
+2026-11-21 18:22:37 WARN LegacyAdapter - legacy client omitted optional field request=req-722082
+2026-11-21 18:33:00 INFO LegacyAdapter - legacy order payload translated order=ord-811757 schemaVersion=2
+2026-11-21 18:42:44 INFO LegacyAdapter - legacy order payload translated order=ord-693740 schemaVersion=2
+2026-11-21 18:52:52 WARN LegacyAdapter - legacy client omitted optional field request=req-595542
+2026-11-21 19:04:49 INFO LegacyAdapter - legacy order payload translated order=ord-905115 schemaVersion=2
+2026-11-21 19:14:50 INFO LegacyAdapter - legacy order payload translated order=ord-432935 schemaVersion=2
+2026-11-21 19:24:19 INFO LegacyAdapter - legacy order payload translated order=ord-954170 schemaVersion=2
+2026-11-21 19:35:49 WARN LegacyAdapter - legacy client omitted optional field request=req-577530
+2026-11-21 19:47:03 INFO LegacyAdapter - legacy order payload translated order=ord-365757 schemaVersion=2
+2026-11-21 19:57:46 INFO LegacyAdapter - legacy order payload translated order=ord-438601 schemaVersion=2
+2026-11-21 20:08:31 INFO LegacyAdapter - legacy order payload translated order=ord-743847 schemaVersion=2
+2026-11-21 20:16:37 INFO LegacyAdapter - legacy order payload translated order=ord-144066 schemaVersion=2
+2026-11-21 20:28:39 INFO LegacyAdapter - legacy order payload translated order=ord-481594 schemaVersion=2
+2026-11-21 20:38:10 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 20:49:23 INFO LegacyAdapter - legacy order payload translated order=ord-598931 schemaVersion=2
+2026-11-21 20:59:36 INFO LegacyAdapter - legacy order payload translated order=ord-928876 schemaVersion=2
+2026-11-21 21:09:22 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 21:21:39 INFO LegacyAdapter - legacy order payload translated order=ord-930121 schemaVersion=2
+2026-11-21 21:30:31 INFO LegacyAdapter - legacy order payload translated order=ord-125204 schemaVersion=2
+2026-11-21 21:41:27 INFO LegacyAdapter - legacy order payload translated order=ord-473283 schemaVersion=2
+2026-11-21 21:52:23 INFO LegacyAdapter - legacy order payload translated order=ord-245033 schemaVersion=2
+2026-11-21 22:03:29 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 22:12:25 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 22:24:39 INFO LegacyAdapter - legacy order payload translated order=ord-181858 schemaVersion=2
+2026-11-21 22:33:21 INFO LegacyAdapter - legacy order payload translated order=ord-946272 schemaVersion=2
+2026-11-21 22:44:37 INFO LegacyAdapter - legacy order payload translated order=ord-339085 schemaVersion=2
+2026-11-21 22:55:40 WARN LegacyAdapter - legacy client omitted optional field request=req-594398
+2026-11-21 23:05:06 ERROR LegacyAdapter - legacy payload conversion failed: java.lang.IllegalArgumentException
+2026-11-21 23:16:08 INFO LegacyAdapter - legacy order payload translated order=ord-290373 schemaVersion=2
