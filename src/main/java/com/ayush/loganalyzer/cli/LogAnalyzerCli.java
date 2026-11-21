@@ -50,6 +50,14 @@ public final class LogAnalyzerCli {
     public boolean executeArguments(List<String> tokens, PrintWriter output) {
         Objects.requireNonNull(output, "output must not be null");
         try {
+            if (tokens == null) {
+                throw new IllegalArgumentException("Arguments must not be null");
+            }
+            for (int index = 0; index < tokens.size(); index++) {
+                if (tokens.get(index) == null) {
+                    throw new IllegalArgumentException("Argument at index " + index + " must not be null");
+                }
+            }
             return executeTokens(List.copyOf(tokens), output);
         } catch (IllegalArgumentException exception) {
             output.println("Error: " + exception.getMessage());
