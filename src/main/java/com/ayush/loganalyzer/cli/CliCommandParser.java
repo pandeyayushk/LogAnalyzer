@@ -13,6 +13,8 @@ import java.util.Map;
 
 /** Tokenizes CLI input and parses filter command arguments. */
 public final class CliCommandParser {
+    private static final List<String> OPTIONS = List.of("--severity", "--keyword", "--logger", "--from", "--to");
+
     /** A parsed filter command's directory and criteria. */
     public record FilterInvocation(Path directory, LogFilter filter) {
     }
@@ -72,10 +74,10 @@ public final class CliCommandParser {
         Map<String, String> options = new HashMap<>();
         for (int index = 1; index < arguments.size(); index++) {
             String option = arguments.get(index);
-            if (!List.of("--severity", "--keyword", "--logger", "--from", "--to").contains(option)) {
+            if (!OPTIONS.contains(option)) {
                 throw new IllegalArgumentException("Unknown filter option: " + option);
             }
-            if (index + 1 >= arguments.size() || arguments.get(index + 1).startsWith("--")) {
+            if (index + 1 >= arguments.size() || OPTIONS.contains(arguments.get(index + 1))) {
                 throw new IllegalArgumentException("Missing value for " + option);
             }
             if (options.putIfAbsent(option, arguments.get(++index)) != null) {
