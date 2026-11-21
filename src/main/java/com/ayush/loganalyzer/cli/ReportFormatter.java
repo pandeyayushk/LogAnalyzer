@@ -56,8 +56,9 @@ public final class ReportFormatter {
     }
 
     public String entry(LogEntry entry) {
+        String message = entry.message().replace("\n", "\n    ");
         return String.format(Locale.ROOT, "%s %-5s %s (%s:%d) - %s%n", entry.timestamp(), entry.level(),
-                entry.loggerName(), entry.sourceFile(), entry.startLine(), entry.message());
+                entry.loggerName(), entry.sourceFile(), entry.startLine(), message);
     }
 
     public String filterResult(FilterResult result) {
