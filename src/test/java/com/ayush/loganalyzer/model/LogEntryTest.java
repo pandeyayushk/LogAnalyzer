@@ -47,7 +47,7 @@ class LogEntryTest {
     void preservesMultilineMessageExactly() {
         String message = " first line\r\nsecond line\n  third line  ";
         LogEntry entry = new LogEntry(TIMESTAMP, LogLevel.ERROR, "logger", message, FILE, 8);
-        assertSame(message, entry.message());
+        assertEquals(message, entry.message());
     }
 
     @Test
