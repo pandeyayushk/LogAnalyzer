@@ -1,6 +1,5 @@
 package com.ayush.loganalyzer.cli;
 
-import com.ayush.loganalyzer.model.LogLevel;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
@@ -9,7 +8,9 @@ import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.PosixFilePermission;
+import java.util.Arrays;
 import java.util.EnumSet;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
@@ -154,5 +155,42 @@ class LogAnalyzerCliTest {
 
         assertTrue(buffer.toString().contains("1 skipped"));
         assertTrue(cli.latestReport().isPresent());
+    }
+
+    @Test
+    void executeArgumentsHandlesNullListsElementsAndDirectoryPathsWithSpaces() throws Exception {
+        LogAnalyzerCli cli = new LogAnalyzerCli();
+        StringWriter buffer = new StringWriter();
+        PrintWriter output = new PrintWriter(buffer);
+
+        assertTrue(cli.executeArguments(null, output));
+        assertTrue(buffer.toString().contains("Arguments must not be null"));
+        buffer.getBuffer().setLength(0);
+
+        assertTrue(cli.executeArguments(Arrays.asList("help", null), output));
+        assertTrue(buffer.toString().contains("Argument at index 1 must not be null"));
+
+        Path spacedDirectory = Files.createDirectories(directory.resolve("logs with spaces"));
+        Files.writeString(spacedDirectory.resolve("app.log"), "2026-11-21 10:30:15 INFO App - started");
+        buffer.getBuffer().setLength(0);
+        assertTrue(cli.executeArguments(List.of("analyze", spacedDirectory.toString()), output));
+        assertTrue(buffer.toString().contains("Valid entries: 1"));
+        assertEquals(1, cli.latestReport().orElseThrow().totalEntries());
+    }
+
+    @Test
+    void executeArgumentsPreservesExistingHelpExitAndFilterBehavior() throws Exception {
+        Path spacedDirectory = Files.createDirectories(directory.resolve("filter logs"));
+        Files.writeString(spacedDirectory.resolve("app.log"), "2026-11-21 10:30:15 INFO App - --connection refused");
+        LogAnalyzerCli cli = new LogAnalyzerCli();
+        StringWriter buffer = new StringWriter();
+        PrintWriter output = new PrintWriter(buffer);
+
+        assertTrue(cli.executeArguments(List.of("filter", spacedDirectory.toString(), "--keyword", "--connection"), output));
+        assertTrue(buffer.toString().contains("Matching entries: 1"));
+        buffer.getBuffer().setLength(0);
+        assertTrue(cli.executeArguments(List.of("help"), output));
+        assertTrue(buffer.toString().contains("Commands:"));
+        assertFalse(cli.executeArguments(List.of("exit"), output));
     }
 }

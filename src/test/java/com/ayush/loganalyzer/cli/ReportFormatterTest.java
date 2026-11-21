@@ -2,11 +2,13 @@ package com.ayush.loganalyzer.cli;
 
 import com.ayush.loganalyzer.core.DirectoryReadResult;
 import com.ayush.loganalyzer.core.FilterResult;
+import com.ayush.loganalyzer.model.LogEntry;
 import com.ayush.loganalyzer.model.LogLevel;
 import com.ayush.loganalyzer.report.AnalysisReport;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
+import java.nio.file.Path;
 import java.util.EnumMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -46,6 +48,21 @@ class ReportFormatterTest {
 
         FilterResult result = new FilterResult(5, 0, new DirectoryReadResult(2, 2, 0, 3, java.util.List.of()));
         assertTrue(formatter.filterResult(result).contains("Entries examined: 5\nMatching entries: 0"));
+    }
+
+    @Test
+    void formatsSingleLineAndIndentedMultilineMessagesWithoutChangingTheirText() {
+        LocalDateTime timestamp = LocalDateTime.of(2026, 11, 21, 10, 30, 15);
+        String header = "2026-11-21T10:30:15 INFO  Api (app.log:7) - ";
+        LogEntry single = new LogEntry(timestamp, LogLevel.INFO, "Api", "ready", Path.of("app.log"), 7);
+        assertEquals(header + "ready" + System.lineSeparator(), formatter.entry(single));
+
+        String message = "failure\n    at app.Api.call(Api.java:7)\nCaused by: IOException";
+        LogEntry multiline = new LogEntry(timestamp, LogLevel.ERROR, "Api", message, Path.of("app.log"), 7);
+        assertEquals("2026-11-21T10:30:15 ERROR Api (app.log:7) - failure\n"
+                        + "        at app.Api.call(Api.java:7)\n"
+                        + "    Caused by: IOException" + System.lineSeparator(),
+                formatter.entry(multiline));
     }
 
     private static AnalysisReport sampleReport() {

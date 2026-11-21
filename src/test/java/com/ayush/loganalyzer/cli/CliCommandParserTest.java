@@ -36,6 +36,16 @@ class CliCommandParserTest {
     }
 
     @Test
+    void acceptsQuotedOptionLikeKeywordAndOrdinaryKeywordValues() {
+        var quoted = parser.tokenize("filter logs --keyword \"--connection\"");
+        var parsedQuoted = parser.parseFilter(quoted.subList(1, quoted.size()));
+        assertEquals("--connection", parsedQuoted.filter().keyword().orElseThrow());
+
+        var ordinary = parser.parseFilter(List.of("logs", "--keyword", "connection"));
+        assertEquals("connection", ordinary.filter().keyword().orElseThrow());
+    }
+
+    @Test
     void rejectsMissingUnknownDuplicateAndMalformedFilterOptions() {
         assertThrows(IllegalArgumentException.class, () -> parser.parseFilter(List.of()));
         assertThrows(IllegalArgumentException.class, () -> parser.parseFilter(List.of("--severity", "INFO")));

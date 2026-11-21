@@ -61,6 +61,25 @@ class LogFilterServiceTest {
     }
 
     @Test
+    void startAndEndTimestampBoundsAreIndividuallyInclusive() throws IOException {
+        fixture();
+        LocalDateTime boundary = LocalDateTime.of(2026, 11, 21, 10, 30, 15);
+        List<LogEntry> afterStart = new ArrayList<>();
+        FilterResult startResult = service.filter(directory,
+                new LogFilter(null, null, null, boundary, null), afterStart::add);
+        assertEquals(3, startResult.matchingEntries());
+        assertTrue(afterStart.stream().allMatch(entry -> !entry.timestamp().isBefore(boundary)));
+        assertTrue(afterStart.stream().anyMatch(entry -> entry.timestamp().equals(boundary)));
+
+        List<LogEntry> beforeEnd = new ArrayList<>();
+        FilterResult endResult = service.filter(directory,
+                new LogFilter(null, null, null, null, boundary), beforeEnd::add);
+        assertEquals(3, endResult.matchingEntries());
+        assertTrue(beforeEnd.stream().allMatch(entry -> !entry.timestamp().isAfter(boundary)));
+        assertTrue(beforeEnd.stream().anyMatch(entry -> entry.timestamp().equals(boundary)));
+    }
+
+    @Test
     void combinesCriteriaUsingAndLogicAndDoesNotSearchLoggerOrPathForKeyword() throws IOException {
         fixture();
         LogFilter combined = new LogFilter(LogLevel.ERROR, "CREDENTIALS", "AuthService",

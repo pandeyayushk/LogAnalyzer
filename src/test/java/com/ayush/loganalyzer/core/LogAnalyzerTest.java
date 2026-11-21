@@ -95,6 +95,19 @@ class LogAnalyzerTest {
     }
 
     @Test
+    void countsExceptionNamesInInfoAndWarnEntries() throws IOException {
+        write("non-error-severity.log", String.join("\n",
+                line("2026-04-01 08:00:00", "INFO", "Startup", "java.lang.IllegalArgumentException during setup"),
+                line("2026-04-01 08:01:00", "WARN", "Validation", "com.example.ValidationException was recovered")));
+
+        AnalysisReport report = analyzer.analyze(directory);
+
+        assertEquals(1L, report.exceptionCounts().get("java.lang.IllegalArgumentException"));
+        assertEquals(1L, report.exceptionCounts().get("com.example.ValidationException"));
+        assertEquals(0, report.errorEntries());
+    }
+
+    @Test
     void reportsMalformedLinesAndHandlesEmptyAndInvalidOnlyDirectories() throws IOException {
         write("empty.log", "");
         write("invalid.log", "bad one\nbad two");
