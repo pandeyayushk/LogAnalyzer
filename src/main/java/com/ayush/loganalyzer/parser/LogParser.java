@@ -34,7 +34,8 @@ public final class LogParser {
      * @param sourceFile path of the file containing the line
      * @param lineNumber one-based line number
      * @return the parsed entry, or empty when the line is malformed
-     * @throws IllegalArgumentException if an argument is null or the line number is not positive
+     * @throws NullPointerException if {@code line} or {@code sourceFile} is null
+     * @throws IllegalArgumentException if {@code lineNumber} is not positive
      */
     public Optional<LogEntry> parseHeader(String line, Path sourceFile, long lineNumber) {
         Objects.requireNonNull(line, "line must not be null");
@@ -48,13 +49,21 @@ public final class LogParser {
             return Optional.empty();
         }
 
+        LocalDateTime timestamp;
         try {
-            LocalDateTime timestamp = LocalDateTime.parse(matcher.group(1), TIMESTAMP_FORMAT);
-            LogLevel level = LogLevel.fromString(matcher.group(2));
-            return Optional.of(new LogEntry(timestamp, level, matcher.group(3), matcher.group(4),
-                    sourceFile, lineNumber));
-        } catch (DateTimeParseException | IllegalArgumentException exception) {
+            timestamp = LocalDateTime.parse(matcher.group(1), TIMESTAMP_FORMAT);
+        } catch (DateTimeParseException exception) {
             return Optional.empty();
         }
+
+        LogLevel level;
+        try {
+            level = LogLevel.fromString(matcher.group(2));
+        } catch (IllegalArgumentException exception) {
+            return Optional.empty();
+        }
+
+        return Optional.of(new LogEntry(timestamp, level, matcher.group(3), matcher.group(4),
+                sourceFile, lineNumber));
     }
 }
